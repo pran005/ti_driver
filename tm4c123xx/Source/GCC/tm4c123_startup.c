@@ -352,7 +352,6 @@ void Reset_Handler(void)
     SCB->CPACR &= ~ (CPAC_CP10_M | CPAC_CP11_M);
     SCB->CPACR |= (CPAC_CP10_FULL | CPAC_CP11_FULL);
 
-   //__libc_init_array();
    SystemInit();
    main() ; 
      
